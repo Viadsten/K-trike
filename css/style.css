@@ -453,6 +453,10 @@ body {
   border-radius: 10px;
   background-color: #D5B451; }
 
+.goods {
+  z-index: -1;
+  position: relative; }
+
 .goods__header {
   padding: 10px 0;
   margin: 15px 0;
@@ -580,6 +584,10 @@ body {
 .goods__btn-wrapper--bottom {
   margin-top: 35px; }
 
+.delivery {
+  z-index: -1;
+  position: relative; }
+
 .delivery__h2 {
   text-align: center;
   font-weight: 400;
@@ -622,6 +630,8 @@ body {
   text-align: center; }
 
 .email {
+  z-index: -1;
+  position: relative;
   width: 100%;
   margin-top: 30px;
   padding: 25px 20px;
