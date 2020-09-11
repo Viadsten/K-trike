@@ -64,7 +64,7 @@
 .nav {
   width: 100vw;
   min-width: 100vw;
-  height: 110%;
+  height: 100%;
   position: fixed;
   top: 67px;
   bottom: 0;
@@ -76,7 +76,7 @@
   transition: left 0.3s;
   background: #353535;
   z-index: 2000;
-  overflow-y: scroll; }
+  overflow-y: auto; }
 
 /**
 * Кнопка переключения панели
@@ -360,6 +360,7 @@ body {
   transition: width 0s ease; }
 
 .nav__nav {
+  height: 400px;
   margin-top: 15px;
   width: 100%; }
 
