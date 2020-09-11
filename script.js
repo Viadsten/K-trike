@@ -1,8 +1,6 @@
-var navToggle = document.querySelector(".header__toggle");
+var navToggle = document.querySelector(".nav-toggle");
 var mainNav = document.querySelector(".header__nav-wrapper");
-var newsButton = document.querySelector(".news__button");
-var newsLine = document.querySelector(".news__line--hide");
-var newsCell = document.getElementById('hide-cell');
+
 
 var cachedWidth = $(window).width();
 $(window).resize(function(){
