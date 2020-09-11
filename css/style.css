@@ -286,7 +286,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 18px;
-  color: #dadada;
+  color: red;
   width: 100%;
   text-decoration: none;
   -webkit-transition: color .5s ease, padding .5s ease;
@@ -362,6 +362,7 @@ body {
 .nav__nav {
   margin-top: 15px;
   width: 100%;
+  height: 250px;
   margin-bottom: 100px; }
 
 .nav__nav li {
