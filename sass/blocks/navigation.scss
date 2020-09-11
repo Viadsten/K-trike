@@ -1,6 +1,11 @@
 .header{
   background-color: #313131;
   padding: 10px 5px 10px 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 
 .header__nav-toggle{
