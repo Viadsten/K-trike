@@ -1,0 +1,47 @@
+
+.delivery__h2{
+    text-align: center;
+    font-weight: 400;
+    margin: 30px 0 30px 0;
+}
+
+.delivery__advantages-list{
+    height: 150px;
+    width: 100%;
+    background-color: #e6c240;
+    list-style: none;
+    line-height: 30px;
+    padding-left: 20%;
+    padding-top: 30px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.delivery__card{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 15px;
+    height: 150px;
+    box-shadow: 5px -1px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+
+.deliveri__card-img{
+    margin-left: 80%;
+    margin-top: -1px;
+}
+
+.delivery__description{
+    color: #313131;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.delivery__link{
+    color: rgba(227, 187, 43, 0.9);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
