@@ -76,6 +76,8 @@
   transition: left 0.3s;
   background: #353535;
   z-index: 2000;
+  overflow-y: scroll;
+  margin-bottom: 100px;
 }
 
 /**
@@ -378,6 +380,14 @@ body {
 .nav__nav li{
   display: flex;
   align-items: center;
+  
+  &:hover{
+    .nav__hr1{
+      width: 35px;
+      -webkit-transition: width .3s ease;
+      transition: width .3s ease;
+    }
+  }
 }
 
 .nav__nav li a{
@@ -398,5 +408,6 @@ body {
   height: 1px;
   border: none;
   background-color: #D0AC3D;
+  
 }
 

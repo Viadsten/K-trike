@@ -70,7 +70,9 @@
   -o-transition: left 0.3s;
   transition: left 0.3s;
   background: #353535;
-  z-index: 2000; }
+  z-index: 2000;
+  overflow-y: scroll;
+  margin-bottom: 100px; }
 
 /**
 * Кнопка переключения панели
@@ -365,6 +367,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .nav__nav li:hover .nav__hr1 {
+    width: 35px;
+    -webkit-transition: width .3s ease;
+    -o-transition: width .3s ease;
+    transition: width .3s ease; }
 
 .nav__nav li a {
   display: inline-block;
