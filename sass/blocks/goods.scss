@@ -1,6 +1,5 @@
 .goods{
-    z-index: -1;
-    position: relative;
+    
 }
 
 .goods__header{
@@ -53,6 +52,7 @@
 .goods__card-img, .goods__h3, .goods__code, .goods__availab{
     grid-column-start: 1;
     grid-column-end: 3;
+    
 }
 
 .goods__card-img{
@@ -71,12 +71,16 @@
     font-size: 15px;
     font-weight: 300;
     line-height: 24px;
+    z-index: -1;
+    position: relative;
 }
 
 .goods__price-desc{
     font-size: 18px;
     color: #000;
     margin-top: 10px;
+    z-index: -1;
+    position: relative;
 }
 
 .goods__price{
@@ -84,6 +88,8 @@
     font-size: 24px;
     text-align: right;
     color: #000;
+    z-index: -1;
+    position: relative;
 }
 
 .goods__control{
