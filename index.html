@@ -17,8 +17,12 @@
         </symbol>
       </svg>
         <header class="header">
+          <div class="header__user-nav">
+            <a href="#" class="header__logo-link"><svg width="113" height="44" class="header__logo"><use xlink:href ="#logo"></use></svg></a>
+            <button class="header__login" type="button"><img class="header__login-icon" src="img/login-icon--fff.png" src="иконка входа" width="28" height="26">Вход / Регистрация</button>
+            <button class="header__basket" type="button"><img class="header__basket-icon" src="img/basket-icon--fff.png" src="иконка корзины" width="30" height="30">Корзина ждет пополнения</button>
+          </div>
           
-          <svg width="113" height="44" class="header__logo"><use xlink:href ="#logo"></use></svg>
           <input type="checkbox" id="nav-toggle" hidden>
           <label for="nav-toggle" class="nav-toggle" onclick>
             <span class="header__toggle-line header__toggle-line--first"></span>
@@ -48,18 +52,204 @@
                   <li><hr class="nav__hr1"><a href="#">О компании</a></li>
                 </ul>
               </li>
-       <!--      <li><a href="#">Доставка</a></li>
-              <li><a href="#">Оплата</a></li>
-              <li><a href="#">Отзывы</a></li>
-              <li><a href="#">О компании</a></li>--> 
             </ul>
           </nav>
         </header>
         <main class="page-main">
-            
+          <header class="main-header__search-wrapper">
+            <form action="" method="get" class="main-header__search">
+              <input class="main-header__input" name="s" placeholder="Что ищем?" type="search">
+              <button type="submit" class="main-header__search-button">Поиск</button>
+            </form>
+          </header>
+          <section class="goods">
+            <header class="goods__header">
+              <h2 class="goods__h2">Хиты продаж</h2>
+              <div class="goods__btn-wrapper">
+                <a class="goods__all-link" href="#">Посмотеть все товары</a>
+                <button class="goods__btn"><img class="goods__back-img" src="img/back-btn.png" alt="назад" width="30px" height="30px"></button>
+                <button class="goods__btn"><img class="goods__back-img" src="img/forward-btn.png" alt="вперёд" width="30px" height="30px"></button>
+              </div>
+            </header>
+            <div class="goods__card-wrapper">
+              <div class="goods__card">
+                <img class="goods__card-img" alt="Цемент" src="img/cement.png" width="150" height="150">
+                <h3 class="goods__h3">Цемент</h3>
+                <p class="goods__code">Код товара 001001</p>
+                <p class="goods__availab">Наличие: Есть на складе</p>
+                <p class="goods__price-desc">Цена за шт.:</p>
+                <p class="goods__price">100р</p>
+                <div class="goods__control">
+                  <div class="number">
+                    <button class="goods__minus">-</button>
+                    <input class="goods__input" type="text" value="1" size="1"/>
+                    <button class="goods__plus">+</button>
+                  </div>
+                  <button type="submit" class="goods__button"><img class="goods__button-img" src="img/btn-basket.png" width="25" height="25"></button>
+                </div>
+              </div>
+              <div class="goods__card">
+                <img class="goods__card-img" alt="drel" src="img/drel.png" width="150" height="150">
+                <h3 class="goods__h3">Шурик</h3>
+                <p class="goods__code">Код товара 001001</p>
+                <p class="goods__availab">Наличие: Есть на складе</p>
+                <p class="goods__price-desc">Цена за шт.:</p>
+                <p class="goods__price">100р</p>
+                <div class="goods__control">
+                  <div class="number">
+                    <button class="goods__minus">-</button>
+                    <input class="goods__input" type="text" value="1" size="1"/>
+                    <button class="goods__plus">+</button>
+                  </div>
+                  <button type="submit" class="goods__button"><img class="goods__button-img" src="img/btn-basket.png" width="25" height="25"></button>
+                </div>
+              </div>
+              <div class="goods__card">
+                <img class="goods__card-img" alt="ytepl" src="img/ytepl.png" width="150" height="150">
+                <h3 class="goods__h3">Утеплитель</h3>
+                <p class="goods__code">Код товара 001001</p>
+                <p class="goods__availab">Наличие: Есть на складе</p>
+                <p class="goods__price-desc">Цена за шт.:</p>
+                <p class="goods__price">100р</p>
+                <div class="goods__control">
+                  <div class="number">
+                    <button class="goods__minus">-</button>
+                    <input class="goods__input" type="text" value="1" size="1"/>
+                    <button class="goods__plus">+</button>
+                  </div>
+                  <button type="submit" class="goods__button"><img class="goods__button-img" src="img/btn-basket.png" width="25" height="25"></button>
+                </div>
+              </div>
+              <div class="goods__card">
+                <img class="goods__card-img" alt="ytepl" src="img/ytepl.png" width="150" height="150">
+                <h3 class="goods__h3">Утеплитель</h3>
+                <p class="goods__code">Код товара 001001</p>
+                <p class="goods__availab">Наличие: Есть на складе</p>
+                <p class="goods__price-desc">Цена за шт.:</p>
+                <p class="goods__price">100р</p>
+                <div class="goods__control">
+                  <div class="number">
+                    <button class="goods__minus">-</button>
+                    <input class="goods__input" type="text" value="1" size="1"/>
+                    <button class="goods__plus">+</button>
+                  </div>
+                  <button type="submit" class="goods__button"><img class="goods__button-img" src="img/btn-basket.png" width="25" height="25"></button>
+                </div>
+              </div>
+              <div class="goods__card">
+                <img class="goods__card-img" alt="ytepl" src="img/ytepl.png" width="150" height="150">
+                <h3 class="goods__h3">Шпаклевка</h3>
+                <p class="goods__code">Код товара 001001</p>
+                <p class="goods__availab">Наличие: Есть на складе</p>
+                <p class="goods__price-desc">Цена за шт.:</p>
+                <p class="goods__price">100р</p>
+                <div class="goods__control">
+                  <div class="number">
+                    <button class="goods__minus">-</button>
+                    <input class="goods__input" type="text" value="1" size="1"/>
+                    <button class="goods__plus">+</button>
+                  </div>
+                  <button type="submit" class="goods__button"><img class="goods__button-img" src="img/btn-basket.png" width="25" height="25"></button>
+                </div>
+              </div>
+              <div class="goods__card">
+                <img class="goods__card-img" alt="kraask" src="img/krask.png" width="150" height="150">
+                <h3 class="goods__h3">Краска</h3>
+                <p class="goods__code">Код товара 001001</p>
+                <p class="goods__availab">Наличие: Есть на складе</p>
+                <p class="goods__price-desc">Цена за шт.:</p>
+                <p class="goods__price">100р</p>
+                <div class="goods__control">
+                  <div class="number">
+                    <button class="goods__minus">-</button>
+                    <input class="goods__input" type="text" value="1" size="1"/>
+                    <button class="goods__plus">+</button>
+                  </div>
+                  <button type="submit" class="goods__button"><img class="goods__button-img" src="img/btn-basket.png" width="25" height="25"></button>
+                </div>
+              </div>
+              <div class="goods__card">
+                <img class="goods__card-img" alt="Цемент" src="img/cement1.png" width="150" height="150">
+                <h3 class="goods__h3">Цемент</h3>
+                <p class="goods__code">Код товара 001001</p>
+                <p class="goods__availab">Наличие: Есть на складе</p>
+                <p class="goods__price-desc">Цена за шт.:</p>
+                <p class="goods__price">100р</p>
+                <div class="goods__control">
+                  <div class="number">
+                    <button class="goods__minus">-</button>
+                    <input class="goods__input" type="text" value="1" size="1"/>
+                    <button class="goods__plus">+</button>
+                  </div>
+                  <button type="submit" class="goods__button"><img class="goods__button-img" src="img/btn-basket.png" width="25" height="25"></button>
+                </div>
+              </div>
+              <div class="goods__card">
+                <img class="goods__card-img" alt="Цемент" src="img/cement1.png" width="150" height="150">
+                <h3 class="goods__h3">Цемент</h3>
+                <p class="goods__code">Код товара 001001</p>
+                <p class="goods__availab">Наличие: Есть на складе</p>
+                <p class="goods__price-desc">Цена за шт.:</p>
+                <p class="goods__price">100р</p>
+                <div class="goods__control">
+                  <div class="number">
+                    <button class="goods__minus">-</button>
+                    <input class="goods__input" type="text" value="1" size="1"/>
+                    <button class="goods__plus">+</button>
+                  </div>
+                  <button type="submit" class="goods__button"><img class="goods__button-img" src="img/btn-basket.png" width="25" height="25"></button>
+                </div>
+              </div>
+            </div>
+            <div class="goods__btn-wrapper goods__btn-wrapper--bottom">
+              <a class="goods__all-link" href="#">Посмотеть все товары</a>
+              <button class="goods__btn"><img class="goods__back-img" src="img/back-btn.png" alt="назад" width="30px" height="30px"></button>
+              <button class="goods__btn"><img class="goods__back-img" src="img/forward-btn.png" alt="вперёд" width="30px" height="30px"></button>
+            </div>
+          </section>
+          <section class="delivery">
+            <h2 class="delivery__h2">Курьерская доставка</h2>
+            <ul class="delivery__advantages-list">
+              <li class="dilivery__item">- Оплата при получении товара</li>
+              <li class="dilivery__item">- Доставка по всей России</li>
+              <li class="dilivery__item">- Сроки доставки</li>
+            </ul>
+            <div class="delivery__card">
+              <img class="deliveri__card-img" src="img/delivery-img.svg" width="25" height="49">
+              <p class="delivery__description">Бесплатная доставка при<br>покупке от 4500 т.р.</p>
+              <a class="delivery__link" href="#">Подробнее ></a>
+            </div>
+            <div class="delivery__card">
+              <img class="deliveri__card-img" src="img/delivery-img.svg" width="30" height="55">
+              <p class="delivery__description">Экспресс доставка в<br>регионы России</p>
+              <a class="delivery__link" href="#">Подробнее ></a>
+            </div>
+          </section>
+          <section class="email">
+            <div class="email__wrapper">
+              <p class="email__description">Мы проводим специальные акции для наших клиентов. 
+                Оформите подписку и мы будем держать вас в курсе.</p>
+              <input type="email" class="email__input" placeholder="E-mail">
+              <button class="email__button" type="submit">Подписаться</button>
+            </div>
+          </section>
         </main>
         <footer class="page-footer">
-         
+         <div class="footer__wrapper">
+          <a href="#" class="footer__logo-link"><svg width="113" height="44" class="footer__logo"><use xlink:href ="#logo"></use></svg></a>
+          <ul class="footer__link-list">
+            <li class="footer__link-item--header"><h3 class="footer__h3">Навигация</h3><hr class="footer__h3-line"></li>
+            <li class="footer__link-item"><a href="#" class="footer__link">Доставка</a></li>
+            <li class="footer__link-item"><a href="#" class="footer__link">Отзывы</a></li>
+            <li class="footer__link-item"><a href="#" class="footer__link">Оплата</a></li>
+            <li class="footer__link-item"><a href="#" class="footer__link">О компании</a></li>
+          </ul>
+          <ul class="footer__contact-list">
+            <li class="footer__contact-item--header"><h3 class="footer__h3">Связаться с нами</h3><hr class="footer__h3-line footer__h3-line--second"></li>
+            <li class="footer__contact-item"><p class="footer__descr">8(800)000-00-00</p></li>
+            <li class="footer__contact-item"><p class="footer__descr">9:00-21:00, пн-вс</p></li>
+          </ul>
+         </div>
         </footer>
         <script src="script.js"></script>
     </body>
