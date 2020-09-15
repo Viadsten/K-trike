@@ -30,3 +30,35 @@
     background-color: rgba(227, 187, 43, 0.9);
     border-radius: 17px;
 }
+
+@media (min-width: 640px){
+    .email__wrapper{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10%;
+    }
+    .email__description{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media (min-width: 1080px){
+    .email{
+        
+    }
+    .email__wrapper{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 50% 20% 15%;
+        grid-column-gap: 7%;
+    }
+    .email__description{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .email__description{
+        text-align: left;
+    }
+}

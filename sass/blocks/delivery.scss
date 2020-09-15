@@ -49,3 +49,48 @@
     display: block;
     text-align: center;
 }
+.delivery-car{
+    display: none;
+}
+@media (min-width: 640px){
+    .delivery{
+        display: grid;
+        width: 100%;
+        margin: 30px auto;
+        grid-template-columns: 55% 45%;
+        
+        :nth-child(2){
+            max-width: 550px;
+        }
+    }
+    .delivery__h2{
+        font-size: 30px;
+    }
+    .delivery__card{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .delivery__adv-list-wrp{
+        background-color: rgba(227, 187, 43, 0.9);
+    }
+    .delivery__advantages-list{
+    background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .delivery__advantages-list{
+        font-size: 20px;
+        padding-left: 10%;
+        line-height: 40px;
+    }
+}
+
+@media (min-width: 940px){
+    .delivery-car{
+        display: block;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 40%;
+        margin-top: -300px;
+        margin-left: 30%;
+    }
+}

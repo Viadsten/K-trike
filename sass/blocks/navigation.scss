@@ -1,5 +1,7 @@
 
-
+.header-desk{
+  display: none;
+}
 .header__nav-toggle{
   width: 70px;
   height: 45px;
@@ -444,5 +446,84 @@ body {
   font-size: 0;
   line-height: 0;
 }
+@media (min-width: 576px){
+  .header__login, .header__basket{
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    line-height: 18px;
+  }
+  .header__login-icon{
+    margin-right: 10px;
+    width: 32px;
+    height: 30px;
+  }
+  .header__basket-icon{
+    margin-right: 10px;
+    width: 34px;
+    height: 32px;
+  }
+  .header__user-nav{
+    margin-left: 18%;
+  }
+  .header__logo{
+    width: 100px;
+  }
+}
 
-
+@media (min-width: 980px){
+  .header{
+    display: none;
+  }
+  .header-desk{
+    width: 100%;
+    display: block;
+    background-color: #313131;
+    padding: 20px 0;
+  }
+  .header-desk__wrapper{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+  .header-desk__spb{
+    font-size: 18px;
+  }
+  .header-desk__tel{
+    font-size: 23px;
+    color: #fff;
+    line-height: 40px;
+  }
+  .header-desk__link{
+    color: #fff;
+    font-size: 18px;
+  }
+  .header-desk__login{
+    background-color: #313131;
+    border: none;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    &:hover{
+      opacity: 0.6;
+    }
+    &:active{
+      opacity: 0.3;
+    }
+  }
+  .header-desk__time{
+    display: flex;
+    align-items: center;
+  }
+  .header-desk__login-icon{
+    margin-right: 10px;
+  }
+  .header-desk__time-img{
+    margin-right: 20px;
+  }
+}

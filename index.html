@@ -19,10 +19,9 @@
         <header class="header">
           <div class="header__user-nav">
             <a href="#" class="header__logo-link"><svg width="113" height="44" class="header__logo"><use xlink:href ="#logo"></use></svg></a>
-            <button class="header__login" type="button"><img class="header__login-icon" src="img/login-icon--fff.png" src="иконка входа" width="28" height="26">Вход / Регистрация</button>
-            <button class="header__basket" type="button"><img class="header__basket-icon" src="img/basket-icon--fff.png" src="иконка корзины" width="30" height="30">Корзина ждет пополнения</button>
+            <button class="header__login" type="button"><img class="header__login-icon" src="img/login-icon--fff.png" src="иконка входа" width="28" height="26">Вход<br>Регистрация</button>
+            <button class="header__basket" type="button"><img class="header__basket-icon" src="img/basket-icon--fff.png" src="иконка корзины" width="30" height="30">Корзина ждет<br>пополнения</button>
           </div>
-          
           <input type="checkbox" id="nav-toggle" hidden>
           <label for="nav-toggle" class="nav-toggle" onclick>
             <span class="header__toggle-line header__toggle-line--first"></span>
@@ -55,8 +54,35 @@
             </ul>
           </nav>
         </header>
+        <header class="header-desk">
+          <div class="header-desk__wrapper">
+            <a href="#" class="header-desk__logo-link"><svg width="160" height="64" class="header-desk__logo"><use xlink:href ="#logo"></use></svg></a>
+            <div class="header-desk__first-col">
+              <p class="header-desk__spb">Санкт-Петербург</p>
+              <p class="header-desk__tel">8(800)800-00-00</p>
+              <a class="header-desk__link" href="#">Заказать звонок</a>
+            </div>
+            <div class="header-desk__second-col">
+              <button class="header-desk__login" type="button"><img class="header-desk__login-icon" src="img/login-desk.png" src="иконка входа" width="40" height="39">Вход / Регистрация</button>
+              <div class="header-desk__time">
+                <img class="header-desk__time-img" src="img/time-desk.png" width="45" height="45">
+                <p class="header-desk__time">9:00-21:00<br>без выходных</p>
+              </div>
+            </div>
+          </div>
+        </header>
         <main class="page-main">
           <header class="main-header__search-wrapper">
+            <nav class="main-header__site-nav">
+              <a href="#" class="main-header__link">Доставка</a>
+              <a href="#" class="main-header__link">Оплата</a>
+              <a href="#" class="main-header__link">Отзывы</a>
+              <a href="#" class="main-header__link">О компании</a>
+              <button type="button" class="main-header__button">
+                <figure class="main-header__button-circle">1</figure>
+                <img class="main-header__button-img" src="img/basket-desk.png" width="40" height="40">Корзина ждет<br>пополнения
+              </button>
+            </nav>
             <form action="" method="get" class="main-header__search">
               <input class="main-header__input" name="s" placeholder="Что ищем?" type="search">
               <button type="submit" class="main-header__search-button">Поиск</button>
@@ -64,13 +90,32 @@
           </header>
           <section class="goods">
             <header class="goods__header">
-              <h2 class="goods__h2">Хиты продаж</h2>
               <div class="goods__btn-wrapper">
+                <h2 class="goods__h2">Хиты продаж</h2>
                 <a class="goods__all-link" href="#">Посмотеть все товары</a>
-                <button class="goods__btn"><img class="goods__back-img" src="img/back-btn.png" alt="назад" width="30px" height="30px"></button>
-                <button class="goods__btn"><img class="goods__back-img" src="img/forward-btn.png" alt="вперёд" width="30px" height="30px"></button>
+                <div class="goods__header-btn-wrapper">
+                  <button class="goods__btn"><img class="goods__back-img" src="img/back-btn.png" alt="назад" width="30px" height="30px"></button>
+                  <button class="goods__btn"><img class="goods__back-img" src="img/forward-btn.png" alt="вперёд" width="30px" height="30px"></button>
+                </div>
               </div>
             </header>
+            <div class="goods__nav">
+              <ul class="goods__nav-list">
+                <li class="goods__list-header"><p>Каталог</p><hr class="goods-nav__hr"></li>
+                <li class="goods__list-item goods__list-item--2n"><a href="#">Оборудование</a></li>
+                <li class="goods__list-item"><a href="#">Все для покраски</a></li>
+                <li class="goods__list-item goods__list-item--2n"><a href="#">Инструменты</a></li>
+                <li class="goods__list-item"><a href="#">Все для пола</a></li>
+                <li class="goods__list-item goods__list-item--2n"><a href="#">Все для ванной</a></li>
+                <li class="goods__list-item"><a href="#">Все для кухни</a></li>
+                <li class="goods__list-item goods__list-item--2n"><a href="#">Обои</a></li>
+                <li class="goods__list-item"><a href="#">Навесные потолки</a></li>
+                <li class="goods__list-item goods__list-item--2n"><a href="#">Люстры и свет</a></li>
+                <li class="goods__list-item"><a href="#">Двери и замки</a></li>
+                <li class="goods__list-item goods__list-item--2n"><a href="#">Утепление</a></li>
+                <li class="goods__list-item"><a href="#">Душевые</a></li>
+              </ul>
+            </div>
             <div class="goods__card-wrapper">
               <div class="goods__card">
                 <img class="goods__card-img" alt="Цемент" src="img/cement.png" width="150" height="150">
@@ -203,27 +248,35 @@
             </div>
             <div class="goods__btn-wrapper goods__btn-wrapper--bottom">
               <a class="goods__all-link" href="#">Посмотеть все товары</a>
-              <button class="goods__btn"><img class="goods__back-img" src="img/back-btn.png" alt="назад" width="30px" height="30px"></button>
-              <button class="goods__btn"><img class="goods__back-img" src="img/forward-btn.png" alt="вперёд" width="30px" height="30px"></button>
+              <div class="goods__fot-btn-wrapper">
+                <button class="goods__btn"><img class="goods__back-img" src="img/back-btn.png" alt="назад" width="30px" height="30px"></button>
+                <button class="goods__btn"><img class="goods__back-img" src="img/forward-btn.png" alt="вперёд" width="30px" height="30px"></button>
+              </div>
             </div>
           </section>
           <section class="delivery">
-            <h2 class="delivery__h2">Курьерская доставка</h2>
-            <ul class="delivery__advantages-list">
-              <li class="dilivery__item">- Оплата при получении товара</li>
-              <li class="dilivery__item">- Доставка по всей России</li>
-              <li class="dilivery__item">- Сроки доставки</li>
-            </ul>
-            <div class="delivery__card">
-              <img class="deliveri__card-img" src="img/delivery-img.svg" width="25" height="49">
-              <p class="delivery__description">Бесплатная доставка при<br>покупке от 4500 т.р.</p>
-              <a class="delivery__link" href="#">Подробнее ></a>
+            <div class="delivery__adv-list-wrp">
+              <h2 class="delivery__h2">Курьерская доставка</h2>
+              <ul class="delivery__advantages-list">
+                <li class="dilivery__item">- Оплата при получении товара</li>
+                <li class="dilivery__item">- Доставка по всей России</li>
+                <li class="dilivery__item">- Сроки доставки</li>
+              </ul>
             </div>
-            <div class="delivery__card">
-              <img class="deliveri__card-img" src="img/delivery-img.svg" width="30" height="55">
-              <p class="delivery__description">Экспресс доставка в<br>регионы России</p>
-              <a class="delivery__link" href="#">Подробнее ></a>
+            <div class="delivery__card-wrp">
+              <div class="delivery__card">
+                <img class="deliveri__card-img" src="img/delivery-img.svg" width="25" height="49">
+                <p class="delivery__description">Бесплатная доставка при<br>покупке от 4500 т.р.</p>
+                <a class="delivery__link" href="#">Подробнее ></a>
+              </div>
+              <div class="delivery__card">
+                <img class="deliveri__card-img" src="img/delivery-img.svg" width="30" height="55">
+                <p class="delivery__description">Экспресс доставка в<br>регионы России</p>
+                <a class="delivery__link" href="#">Подробнее ></a>
+              </div>
             </div>
+            <img class="delivery-car" src="img/delivery-car.png" alt="машина">
+
           </section>
           <section class="email">
             <div class="email__wrapper">

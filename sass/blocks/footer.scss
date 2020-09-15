@@ -21,6 +21,7 @@
     color: #fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 
 .footer__contact-list{
@@ -59,4 +60,41 @@
 
 .footer__contact-item{
     font-size: 18px;
+}
+
+.footer__descr{
+    font-size: 15px;
+}
+
+@media (min-width: 640px){
+    .footer__wrapper{
+        display: grid;
+        grid-template-columns: 25% 40% 35%;
+    }
+    .footer__logo-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+        margin-top: 0;
+        order: 0;
+    }
+    .footer__logo{
+        width: 80%;
+        height: 80%;
+        max-width: 220px;
+        max-height: 86px;
+    }
+    .footer__contact-list{
+        margin-top: 0;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer__contact-item{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .footer__descr{
+        font-size: 20px;
+    }
 }
